@@ -1,3 +1,11 @@
+<!-- COOKIE DE USUARIO -->
+<?
+    if (isset($_GET['usuario'])) {
+        "HE ENTRADO";
+        setcookie('usuario', $_GET['usuario']);
+    }
+?>
+
 <html>
 <head>
 

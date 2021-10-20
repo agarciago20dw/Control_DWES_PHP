@@ -1,7 +1,3 @@
-<?php 
-    setcookie('usuario', "");
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,13 +15,18 @@
                     <h1>FORMULARIO USUARIO</h1>
                 </td>
             </tr>
-            <form action="index.php">
+            <form action="index.php" method="get">
                 <tr>
                     <td>
                         <label>Introduce tu nombre de usuario:</label>
                     </td>
                     <td>
-                        <input type="text" name="usuario" id="usuario" value="">
+                        <input type="text" name="usuario" id="usuario">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="ENVIAR">
                     </td>
                 </tr>
             </form>
